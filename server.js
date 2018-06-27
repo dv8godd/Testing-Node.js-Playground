@@ -53,6 +53,12 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/projects', (req, res) => {
+	res.render('projects.hbs', {
+		pageTitle: 'Projects Page'
+	});
+});
+
 app.get('/index.php?', (req, res) => {
 	res.send('I\'m not a real PHP page. I\'m Node.js');
 });
